@@ -29,7 +29,7 @@ if [ -n "$AB_OTA_UPDATER" ] ; then
   echo "ro.build.ab_update=$AB_OTA_UPDATER"
 fi
 echo "ro.product.model=$PRODUCT_MODEL"
-echo "ro.product.brand=$PRODUCT_BRAND"
+echo "ro.product.brand=google"
 echo "ro.product.name=$PRODUCT_NAME"
 echo "ro.product.device=$TARGET_DEVICE"
 
