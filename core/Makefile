@@ -457,7 +457,7 @@ endif
 		TARGET_BOARD_PLATFORM="$(TARGET_BOARD_PLATFORM)" \
 		$(PRODUCT_BUILD_PROP_OVERRIDES) \
 	        bash $(VENDOR_BUILDINFO_SH) >> $@
-endif
+	endif
 	$(hide) $(foreach file,$(system_prop_file), \
 	    if [ -f "$(file)" ]; then \
 	        echo Target buildinfo from: "$(file)"; \
