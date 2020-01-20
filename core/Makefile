@@ -447,7 +447,7 @@ endif
 	        TARGET_CPU_ABI2="$(TARGET_CPU_ABI2)" \
 	        $(PRODUCT_BUILD_PROP_OVERRIDES) \
 	        bash $(BUILDINFO_SH) >> $@
-	ifeq ($(TARGET_COPY_OUT_VENDOR),system)
+ifeq ($(TARGET_COPY_OUT_VENDOR),system)
 	$(hide) TARGET_DEVICE="$(TARGET_DEVICE)" \
 		PRODUCT_NAME="$(TARGET_PRODUCT)" \
 		PRODUCT_BRAND="$(PRODUCT_BRAND)" \
@@ -457,7 +457,7 @@ endif
 		TARGET_BOARD_PLATFORM="$(TARGET_BOARD_PLATFORM)" \
 		$(PRODUCT_BUILD_PROP_OVERRIDES) \
 	        bash $(VENDOR_BUILDINFO_SH) >> $@
-	endif
+endif
 	$(hide) $(foreach file,$(system_prop_file), \
 	    if [ -f "$(file)" ]; then \
 	        echo Target buildinfo from: "$(file)"; \
