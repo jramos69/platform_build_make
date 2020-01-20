@@ -473,8 +473,6 @@ endif
 	            echo "#" >> $@; \
 	            echo "# ADDITIONAL_BUILD_PROPERTIES" >> $@; \
 	            echo "#" >> $@; )
-	$(hide) $(foreach line,$(FINAL_BUILD_PROPERTIES), \
-	    echo "$(line)" >> $@;)
 	$(hide) build/make/tools/post_process_props.py $@ $(PRODUCT_SYSTEM_PROPERTY_BLACKLIST)
 
 build_desc :=
