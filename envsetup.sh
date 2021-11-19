@@ -1846,3 +1846,5 @@ function showcommands() {
 validate_current_shell
 source_vendorsetup
 addcompletions
+
+export SKIP_ABI_CHECKS=true
