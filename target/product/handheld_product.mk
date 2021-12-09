@@ -34,3 +34,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
+    
+# Build in theming functionality
+$(call inherit-product-if-exists, packages/themes/main.mk)
